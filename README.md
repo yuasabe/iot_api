@@ -11,7 +11,11 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+$ python3 --version
+3.7.7
+
+$ pip3 install flask
+
 ```
 
 ### Installing
