@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Sensor Data{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<table>
+  <tr>
+    <th>Time</th>
+    <th>Temp (C)</th>
+    <th>Humidity (%)</th>
+  </tr>
+  {% for d in data %}
+    <tr>
+      <td>{{ d['created_at'] }}</td>
+      <td>{{ d['temp'] }}</td>
+      <td>{{ d['humidity'] }}</td>
+    </tr>
+  {% endfor %}
+</table>
+{% endblock %}
